@@ -10,8 +10,8 @@ function LoginRegister() {
 
   const handleSubmit = async () => {
     const url = isLogin
-      ? "https://mern-login-app-q2ml.onrender.com"
-      : "https://mern-login-app-q2ml.onrender.com";
+      ? "https://mern-login-app-q2ml.onrender.com/api/auth/login"
+      : "https://mern-login-app-q2ml.onrender.com/api/auth/register";
 
     try {
       const res = await axios.post(url, { email, password });
